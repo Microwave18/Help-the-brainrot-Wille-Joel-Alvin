@@ -1,6 +1,6 @@
 import time
 import os
-def endrum(hjälpt):
+def endrum(hjälpt, val):
     time.sleep(2)
     print("Du har nu kommit till slutrummet")
     time.sleep(2)
@@ -35,8 +35,7 @@ def endrum(hjälpt):
     print("Dörr 1 avslutar spelet")
     time.sleep(4)
     print("Dörr 2 tar dig tillbaka")
-
-def endrum(val):
+    
     Lista = ["Dörr 1 avslutar spelet", "Dörr 2 så går du tillbaka", "exit"]
     for item in Lista:
         print(item)

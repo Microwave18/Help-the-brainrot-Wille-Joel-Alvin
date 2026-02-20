@@ -1,4 +1,5 @@
 import time
+import os
 def endrum(hjälpt):
     time.sleep(2)
     print("Du har nu kommit till slutrummet")
@@ -18,11 +19,7 @@ def endrum(hjälpt):
           
               (Dörr 1)       (Dörr 2)
 """)
-    time.sleep(2)
-    print("Dörr 1 avslutar spelet")
-    time.sleep(4)
-    print("Dörr 2 tar dig tillbaka")
-    
+  
     if hjälpt == "0":
         print("Du har hjälp 0/4 brainrots, Du kommer att förlora ifall du avslutar")
     elif hjälpt == "1":
@@ -33,6 +30,11 @@ def endrum(hjälpt):
         print("Du har hjälp 3/4 brainrots, Du kan avsluta ifall du vill")
     elif hjälpt == "4":
        print("Du har hjälp 4/4 brainrots, Du kan avsluta ifall du vill")
+
+    time.sleep(2)
+    print("Dörr 1 avslutar spelet")
+    time.sleep(4)
+    print("Dörr 2 tar dig tillbaka")
 
 def endrum(val):
     Lista = ["Dörr 1 avslutar spelet", "Dörr 2 så går du tillbaka", "exit"]

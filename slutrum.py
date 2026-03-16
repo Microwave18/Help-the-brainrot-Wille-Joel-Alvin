@@ -1,12 +1,15 @@
 import time
 import os
-def endrum(hjälpt, val):
+def endroom(name):
+    points = help_67 + help_amungus + help_tung + help_tralalero
+    time.sleep(2)
     print("Du har nu kommit till slutrummet")
     time.sleep(2)
-    print("""__________     __________
-            |  __  __  |   |  __  __  | 
+    print("""
+             __________     __________
+            |  __  __  |   |  __  __  |
             | |  ||  | |   | |  ||  | |
-            | |  ||  | |   | |  ||  | | 
+            | |  ||  | |   | |  ||  | |
             | |__||__| |   | |__||__| |
             |  __  __()|   |  __  __()|
             | |  ||  | |   | |  ||  | |
@@ -15,30 +18,38 @@ def endrum(hjälpt, val):
             | |  ||  | |   | |  ||  | |
             | |__||__| |   | |__||__| |
             |__________|   |__________|
-          
+         
               (Dörr 1)       (Dörr 2)
 """)
-  
-    if hjälpt == "0":
+ 
+    if points == 0:
         print("Du har hjälp 0/4 brainrots, Du kommer att förlora ifall du avslutar")
-    elif hjälpt == "1":
+    elif points == 1:
         print("Du har hjälp 1/4 brainrots, Du kan avsluta ifall du vill")
-    elif hjälpt == "2":
+    elif points == 2:
         print("Du har hjälp 2/4 brainrots, Du kan avsluta ifall du vill")
-    elif hjälpt == "3":
+    elif points == 3:
         print("Du har hjälp 3/4 brainrots, Du kan avsluta ifall du vill")
-    elif hjälpt == "4":
+    elif points == 4:
        print("Du har hjälp 4/4 brainrots, Du kan avsluta ifall du vill")
-    
-    Lista = ["Dörr 1 avslutar spelet", "Dörr 2 så går du tillbaka", "exit"]
-    for item in Lista:
-        print(item)
+
+
+    time.sleep(2)
+    print("Dörr 1 avslutar spelet")
+    time.sleep(4)
+    print("Dörr 2 tar dig tillbaka")
     while True:
-        if val.lower == "Dörr 1":
+        val = input("Vilken dörr vill du gå in i  (1/2)\n")
+        if val == "1":
             print("Du har avslutat spelet")
-        elif val.lower == "Dörr 2":
+            print(f"Dina poäng: {points}/4")
+            exit()
+            break
+        elif val == "2":
             print("du går tillbaka")
-        elif val.lower == "exit":
-            print("är du säker att du vill avsluta spelet?")
+            time.sleep(2)
+            os.system("cls")
+            room_2(name)
+            break
         else:
-            print("Du har valt något, testa igen")
+            print("Du har valt något, testa igen")  
